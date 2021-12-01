@@ -16,4 +16,6 @@ FROM gcr.io/distroless/base-debian10
 
 COPY --from=build /build /
 
+RUN ["nginx", "-version"]
+
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
