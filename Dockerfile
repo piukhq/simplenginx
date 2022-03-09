@@ -8,6 +8,7 @@ RUN mkdir -p /build/etc/nginx && \
     cp -a --parents /lib/*-linux-gnu/libpcre.so.* /build && \
     cp -a --parents /lib/*-linux-gnu/libz.so.* /build && \
     cp -a --parents /lib/*-linux-gnu/libcrypt.so.* /build && \
+    cp -a --parents /usr/lib/*-linux-gnu/libpcre2-8.so.* /build && \
     cp -a --parents /usr/sbin/nginx /build
 
 ADD nginx.conf /build/etc/nginx/
